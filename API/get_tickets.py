@@ -1,9 +1,9 @@
 #will get back all tickets in your account, sorted however you choose. this one is by requester
 import requests
 
-url = 'https://catzomg.zendesk.com/api/v2/tickets.json'
-user = 'acoleman@zendesk.com'
-pwd = 'wolfsgang'
+url = 'https://{subdomain}.zendesk.com/api/v2/tickets.json'
+user = 'email'
+pwd = 'pwd'
 
 response = requests.get(url, auth=(user, pwd))
 
